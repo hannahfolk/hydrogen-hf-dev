@@ -1,7 +1,8 @@
 import {useLoaderData} from '@remix-run/react';
 import {json} from '@shopify/remix-oxygen';
-import ProductGrid from '../components/ProductGrid';
 import {getPaginationVariables} from '@shopify/hydrogen';
+
+import ProductGrid from '../components/ProductGrid';
 
 export async function loader({params, context, request}) {
   const paginationVariables = getPaginationVariables(request, {
